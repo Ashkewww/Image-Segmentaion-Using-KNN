@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Image Segmentation using KNN Algorithm</title>
+    </head>
+    <body>
+        <center><h1>Image Segmentation</h1></center>
+        <center><form action="/" method="post" enctype="multipart/form-data" required>
+            <input type="file" name="image" accept="image/*"><br/><br/><br/>
+            <input type="number" name="number" required><br/><br/><br/>
+            <input type="submit" value="Upload" >
+
+          </form></center>
+          <center>
+          {% if image_path: %}
+          <center><h2>Segmented Image</h2></center>
+          <center><img src="{{url_for('static',filename='/segmented.jpg')}}" alt ="Filtered Image" ></center>
+          {% endif %}
+          </center>
+    </body>
+</html>
