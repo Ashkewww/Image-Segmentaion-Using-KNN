@@ -9,13 +9,13 @@ To run this project, you need to have Python and OpenCV installed on your system
 1. Clone the repository to your local machine:
 
    ```
-   git clone https://github.com/your-username/your-repo.git
+   git clone https://github.com/ashkewww/Image-Segmentation-Using-KNN.git
    ```
 
 2. Navigate to the project directory:
 
    ```
-   cd your-repo
+   cd Image-Segmentation-Using-KNN
    ```
 
 3. Install the required dependencies using pip:
@@ -28,15 +28,10 @@ To run this project, you need to have Python and OpenCV installed on your system
 
 To use the image segmentation script, follow these steps:
 
-1. Place the input image(s) in the `input` directory.
-
-2. Run the `image_segmentation.py` script:
-
-   ```
-   python image_segmentation.py
-   ```
-
-3. The segmented images will be saved in the `output` directory.
+1. Run the python file app.py (Remember to install the requirements first)
+2. In the webpage you'll see options to upload an image 
+3. Add in the number of colors you want the image to be segmented in.
+4. The Segmented Image will be displayed in the webpage itself
 
 ## Algorithm
 
@@ -60,25 +55,7 @@ The algorithm works as follows:
 
 8. Save the segmented image.
 
-## Example
 
-Here is an example of how to use the image segmentation script:
-
-```python
-import cv2
-
-# Load the input image
-image = cv2.imread('input/image.jpg')
-
-# Convert the image to grayscale
-gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-
-# Apply image segmentation using KNN algorithm
-segmented_image = knn_segmentation(gray)
-
-# Save the segmented image
-cv2.imwrite('output/segmented_image.jpg', segmented_image)
-```
 
 ## Contributing
 
